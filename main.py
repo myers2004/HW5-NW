@@ -1,5 +1,6 @@
 # Import NeedlemanWunsch class and read_fasta function
 from align import read_fasta, NeedlemanWunsch
+import numpy as np
 
 def main():
     """
@@ -20,7 +21,6 @@ def main():
     # TODO print all of the alignment score between each species BRD2 and human BRD2
     # using gap opening penalty of -10 and a gap extension penalty of -1 and BLOSUM62 matrix
     pass
-    
 
 if __name__ == "__main__":
     main()
