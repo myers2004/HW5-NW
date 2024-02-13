@@ -1,5 +1,6 @@
 # Project 5
 Needleman Wunsch Algorithm
+
 [![Build Status](https://github.com/myers2004/HW5-NW/actions/workflows/test.yml/badge.svg?event=push)](https://github.com/myers2004/HW5-NW/actions/workflows/test.yml)
 
 
