@@ -27,7 +27,13 @@ def test_nw_backtrace():
     """
     seq3, _ = read_fasta("./data/test_seq3.fa")
     seq4, _ = read_fasta("./data/test_seq4.fa")
-    pass
+    
+    testNW = NeedlemanWunsch('./substitution_matrices/BLOSUM62.mat',-10, -1)
+    seq3Seq4Alignment = testNW.align(seq3, seq4)
+    epsilon = 0.00000001
+    assert seq3Seq4Alignment[0] >= 17 - epsilon and seq3Seq4Alignment[0] <= 17 + epsilon
+    assert seq3Seq4Alignment[1] == 'MAVHQLIRRP'
+    assert seq3Seq4Alignment[2] == 'M---QLIRHP'
 
 
 
