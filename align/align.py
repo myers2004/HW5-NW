@@ -131,7 +131,7 @@ class NeedlemanWunsch:
         len_A = len(seqA)
         len_B = len(seqB)
 
-        inf = 9999999999
+        inf = np.inf
 
         #intilize empty alignment, gap_A, and gap_B matrix
         self._align_matrix = np.empty((len_A + 1, len_B + 1))

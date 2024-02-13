@@ -36,5 +36,7 @@ def main():
     for alignment in sorted_alingments:
         print(alignment)
 
+
+
 if __name__ == "__main__":
     main()
